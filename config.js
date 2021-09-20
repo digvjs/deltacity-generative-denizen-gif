@@ -1,6 +1,6 @@
 const dimensions = {
-    width: 200,
-    height: 200,
+    width: 600,
+    height: 600,
 };
 
 module.exports = {

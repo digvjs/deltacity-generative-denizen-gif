@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "digvjs <digvijay@webiqon.com>",
   "license": "ISC",
   "dependencies": {
     "canvas": "^2.8.0",
+    "express": "^4.17.1",
+    "express-photo-gallery": "^1.0.9",
     "gifencoder": "^2.0.1"
   }
 }

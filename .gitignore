@@ -1,3 +1,5 @@
 /node_modules
-/build
+/build*
 /backup
+/layers_old*
+/layers

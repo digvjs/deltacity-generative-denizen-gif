@@ -1,12 +1,12 @@
 const { basePath } = require('./lib/PathHelper')
-const imgDir = `${basePath}/build`
+const imgDir = `${basePath}/build1`
 var express = require('express')
 var app = express()
 
 var Gallery = require('express-photo-gallery')
 
 var options = {
-  title: 'My Awesome Degens'
+  title: 'My Awesome Denizens'
 };
 
 app.use('/', Gallery(imgDir, options));

@@ -1,14 +1,17 @@
 const fs = require('fs')
-const {basePath} = require('../lib/PathHelper')
+const { basePath } = require('../lib/PathHelper')
 const layersDir = `${basePath}/layers`;
+
 
 const getElements = (path) => {
     return fs
         .readdirSync(path)
         .filter((item) => !/(^|\/)\.[^\/\.]/g.test(item))
         .map((i) => {
+            let parsedName = i.split('-')
             return {
-                name: i,
+                name: parsedName[3].trim(),
+                parent: parsedName[1].trim(),
                 elements_directory_name: i,
                 path: `${path}${i}`,
             }
